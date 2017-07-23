@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import Navigator from 'native-navigation';
 
 export default class qvikMyMind extends Component {
   render() {
@@ -50,4 +51,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('qvikMyMind', () => qvikMyMind);
+Navigator.registerScreen('Home', () => qvikMyMind);
